@@ -1,0 +1,134 @@
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+
+div.container{
+	padding:0;
+}
+body{
+	padding-top: 30px;
+}
+
+.background1{
+    overflow: hidden;
+}
+.navbar{
+	padding-bottom: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	background: white;
+	position: fixed;
+  	top: 0;
+  	transition: top 0.5s ease-in-out;
+  	width: 100%;
+}
+
+.nav-up {
+    top: -40px;
+}
+
+.navbar-brand{
+	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 0;
+}
+
+#intro{
+	height:30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    /* Center and scale the image nicely */
+   background-image: url("https://images.unsplash.com/photo-1522426266214-ec2d2abb9ce0?ixlib=rb-0.3.5&s=0f759f3a7974babba86c691ed536a92d&auto=format&fit=crop&w=1506&q=80");
+   /*https://images.unsplash.com/photo-1522426266214-ec2d2abb9ce0?ixlib=rb-0.3.5&s=0f759f3a7974babba86c691ed536a92d&auto=format&fit=crop&w=1506&q=80*/
+   /*https://images.unsplash.com/photo-1531252228562-64df0939f1b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b05ac207e428756eba63440a5a6cd924&auto=format&fit=crop&w=1500&q=80*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.sec1{
+	position: center;
+	text-align: center;
+	color:white;
+	margin:auto;
+	font-family:Raleway;
+}
+#sec2{
+	height:50em;
+background:white;
+}
+
+a.navbar-item{
+	display: inline-block;
+	margin:0;
+	padding-top:0.5vw;
+	padding-right: 1vw;
+	padding-left: 1vw;
+	padding-bottom: 0.4vw;
+
+	font-family:  sans-serif;
+	font-weight: 600;
+	color: black;
+	font-size: 1.0em; 
+	text-align: right;
+	opacity: 0.7;
+	border-bottom: 4px solid white;
+	-webkit-transition:opacity 0.5s ease-in-out;
+	-webkit-transition:border-bottom 1.0s ease; 
+}
+
+a.navbar-item:hover{
+	text-decoration: none;
+    opacity: 1;
+    color: black;
+}
+  a.home:hover{
+    border-bottom: 4px solid tomato;
+  }
+    a.work:hover{
+    border-bottom: 4px solid lightseagreen;
+  }
+  a.library:hover{
+    border-bottom: 4px solid orange;
+  }
+  a.contact:hover{
+    border-bottom: 4px solid orchid;
+  }
+
+h4.logoText{
+	display: inline-block;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+	text-decoration: none;
+	color: black;
+	letter-spacing: 2px;
+	-webkit-transition: letter-spacing 1.2s ease-in-out;
+}
+h4.logoText:hover{
+	letter-spacing: 6px;
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+li {
+    list-style-type: none;
+    display: inline;
+}
+ul{
+	padding: 0;
+	display:inline;
+}
+
+nav select {
+  display: none;
+}
+
+@media (max-width: 360px) {
+  nav ul     { display: block-inline;
+  				font-size: 0.6em }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "qa-tool",
+  "version": "1.0.0",
+  "description": "QA tool for POST Requests",
+  "main": "main.js",
+  "dependencies": {
+    "yarn": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amy Wang",
+  "license": "ISC"
+}

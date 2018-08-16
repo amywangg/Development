@@ -1,0 +1,33 @@
+body{
+	width:70%;
+	float left;
+	border-color: #bdc3c7;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding:10px;
+	border: 10px solid #bdc3c7;
+}
+h1{
+	color: #3498db;
+	font-family: courier;
+	text-transform: uppercase;
+	border-bottom: 3px solid tomato;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	letter-spacing: 0.2rem;
+}
+p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	padding-bottom: 10px;
+	font-weight: 200;
+}
+.h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 40px;
+	font-weight: 800;
+}
+.p1{
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+}

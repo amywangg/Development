@@ -1,0 +1,23 @@
+.changeBg{
+	background: tomato;
+}
+.maxLine{
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+h1{
+	display: inline;
+}
+.main{
+	padding: 100px;
+}
+p{
+	display: inline;
+}
+
+.winner{
+	color:green;
+}
+.loser{
+	color: red;
+}

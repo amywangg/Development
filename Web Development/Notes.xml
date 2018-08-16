@@ -1,0 +1,38 @@
+<!-- XML NOTES -->
+
+<person>
+	<age>21</age>
+	<name>Amelia</name>
+	<city>Los Angeles</city>
+</person>
+
+
+> show dbs
+> use demo
+> show dbs
+> db.dogs.insert ()
+> db.dogs.insert({name:"Lucy", breed:"Mutt"})
+WriteResult({ "nInserted" : 1 })
+> db.dogs.find()
+{ "_id" : ObjectId("5b2cf2fd2d292761676fa173"), "name" : "Rusty", "breed" : "Mutt" }
+{ "_id" : ObjectId("5b2cf33b2d292761676fa174"), "name" : "Lucy", "breed" : "Mutt" }
+> db.dogs.find({name:"Rusty"})
+{ "_id" : ObjectId("5b2cf2fd2d292761676fa173"), "name" : "Rusty", "breed" : "Mutt" }
+> db.dogs.insert({name:"HOE",breed:"Poodle"})
+WriteResult({ "nInserted" : 1 })
+> db.dogs.find({breed:"Mutt"})
+{ "_id" : ObjectId("5b2cf2fd2d292761676fa173"), "name" : "Rusty", "breed" : "Mutt" }
+{ "_id" : ObjectId("5b2cf33b2d292761676fa174"), "name" : "Lucy", "breed" : "Mutt" }
+> 
+> db.dogs.update({name:"HOE"}, {breed:"labradoodle"})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> 
+> db.dogs.update({name:"Rusty"},{$set: {name:"Tater",isCute: true}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.dogs.find()
+{ "_id" : ObjectId("5b2cf2fd2d292761676fa173"), "name" : "Tater", "breed" : "Mutt", "isCute" : true }
+{ "_id" : ObjectId("5b2cf33b2d292761676fa174"), "name" : "Lucy", "breed" : "Mutt" }
+{ "_id" : ObjectId("5b2cf3892d292761676fa175"), "breed" : "labradoodle" }
+> 
+
+db.dogs.remove({breed:"labradoodle"}) 

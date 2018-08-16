@@ -1,0 +1,9 @@
+// JSON NOTES
+
+{
+	"person": {
+		"age": "21",
+		"name": "Amelia",
+		"city": "Los Angeles"
+	}
+}
